@@ -1,19 +1,11 @@
 {
-  "name": "Angular-Kickstart",
-  "version": "1.0.0",
-  "homepage": "https://github.com/JeremyMorgan/Angular-Kickstart",
+  "name": "fca",
+  "version": "0.1.0",
   "authors": [
-    "Jeremy Morgan"
+    "TMEDIA "
   ],
-  "description": "Angular Kickstart",
+  "description": "Foxtel Comparison App",
   "main": "index.html",
-  "keywords": [
-    "git",
-    "angular",
-    "bower",
-    "bootstrap"
-  ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

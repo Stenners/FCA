@@ -3,9 +3,5 @@ angular.module('angularstrapApp')
         return {
             templateUrl: '/app/components/home/views/heroblock.view.html'
         };
-    })
-    .directive('subSection', function() {
-        return {
-            templateUrl: '/app/components/home/views/subsection.view.html'
-        };
+
 });

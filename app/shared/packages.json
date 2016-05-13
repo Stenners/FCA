@@ -1,0 +1,18 @@
+{
+    "Packages": [
+		{
+        "name" : "PLATINUM HD",
+		"channels": {
+
+        },
+        "price": "135"
+        },
+		{
+        "name" : "ENTERTAINMENT",
+		"channels": {
+
+        },
+        "price": "45"
+        }
+    ]
+}

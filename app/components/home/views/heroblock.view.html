@@ -1,13 +1,12 @@
 <div class="jumbotron">
-    <h1>
-        {{ctrl.HeroHeader}}
-    </h1>
-
-    <p>
-        {{ctrl.HeroText}}
-    </p>
-
-    <p>
-        <a class="btn btn-primary btn-large" href="#">Learn more</a>
-    </p>
+	<div ng-repeat="Package in ctrl.Packages" class="">
+		{{Package.name}}
+	</div>
 </div>
+
+<!-- <div class="jumbotron">
+	<div ng-repeat="Package in ctrl.angularstrapService.retrievedData.Packages" class="">
+		{{Package.name}}
+	</div>
+
+</div> -->

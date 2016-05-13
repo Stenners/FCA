@@ -1,4 +1,4 @@
-(function () {
+(function() {
     'use strict';
 
     angular.module('angularstrapApp.homeServices', [])
@@ -6,28 +6,38 @@
 
     asyncService.$inject = ['$http', '$q'];
 
-        function asyncService($http, $q) {
-            
-            var factory = {
-                //properties
-                retrievedData: [],
-                getHeroText : getHeroText
-            };
+    function asyncService($http, $q) {
 
-            function getHeroText() {
+        var factory = {
+            //properties
+            retrievedData: [],
+            //getHeroText: getHeroText,
+            getPackages: getPackages
+        };
 
-                // this is where we'd put some ajax calls
+        // function getHeroText() {
+        //
+        //     // this is where we'd put some ajax calls
+        //
+        //     factory.retrievedData = {
+        //         HeroHeader: "TEST!",
+        //         HeroText: "This is the AngularStrap home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services."
+        //     };
+        //
+        //     //factory.retrievedData.HeroHeader = "Hello World!";
+        //     //factory.retrievedData.HeroText = "This is the AngularStrap home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services.";
+        //
+        //
+        // }
 
-                factory.retrievedData = {
-                    HeroHeader: "Hello AngularStrap!",
-                    HeroText: "This is the AngularStrap home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services."
-                };
+        function getPackages() {
 
-                //factory.retrievedData.HeroHeader = "Hello World!";
-                //factory.retrievedData.HeroText = "This is the AngularStrap home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services.";
+            $http.get('app/shared/packages.json')
+                .success(function(data) {
+                    factory.retrievedData = data;
+                });
 
-
-            }
-            return factory;
         }
+        return factory;
+    }
 })();

@@ -3,15 +3,15 @@
  */
 
 angular
-    
+
     .module('angularstrapApp', [
         'ui.router',
         'angularstrapApp.homeServices'
     ])
 
-    .constant('CONFIG', 
+    .constant('CONFIG',
     {
 	    DebugMode: true,
 	    StepCounter: 0,
 	    APIHost: 'http://localhost:12017'
-	}); 
+	});
