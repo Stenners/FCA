@@ -10,12 +10,12 @@
 
         var vm = this;  // jshint ignore: line
 
-        //services
+        //services (old stuff)
         //vm.angularstrapService = asyncService;
         //asyncService.getPackages();
 
-        asyncService.getPackages().then(function(result) {
-            vm.Packages = result;
+        asyncService.getPackages().then(function(data) {
+            vm.Packages = data;
         });
 
 
