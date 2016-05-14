@@ -8,18 +8,16 @@
 
     function homeController($scope, $http, $window, $q, asyncService) {
 
-        var vm = this;
+        var vm = this;  // jshint ignore: line
 
         //services
         //vm.angularstrapService = asyncService;
         //asyncService.getPackages();
 
-
-
-        $http.get('app/shared/packages.json')
-		.success(function(data, status, headers, config) {
-            vm.Packages = data.Packages;
+        asyncService.getPackages().then(function(result) {
+            vm.Packages = result;
         });
+
 
         return vm;
     }

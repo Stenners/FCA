@@ -11,33 +11,20 @@
         var factory = {
             //properties
             retrievedData: [],
-            //getHeroText: getHeroText,
             getPackages: getPackages
         };
 
-        // function getHeroText() {
-        //
-        //     // this is where we'd put some ajax calls
-        //
-        //     factory.retrievedData = {
-        //         HeroHeader: "TEST!",
-        //         HeroText: "This is the AngularStrap home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services."
-        //     };
-        //
-        //     //factory.retrievedData.HeroHeader = "Hello World!";
-        //     //factory.retrievedData.HeroText = "This is the AngularStrap home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services.";
-        //
-        //
-        // }
-
         function getPackages() {
-
+            var deferred = $q.defer();
             $http.get('app/shared/packages.json')
                 .success(function(data) {
-                    factory.retrievedData = data;
-                });
+                    factory.retrievedData = data.Packages;
+                    deferred.resolve(factory.retrievedData);
 
+                });
+            return deferred.promise;
         }
+
         return factory;
     }
 })();
