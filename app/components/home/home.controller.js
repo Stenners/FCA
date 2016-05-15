@@ -18,17 +18,6 @@
             vm.Packages = data;
         });
 
-        vm.newClick = function(){
-            console.log('this');
-        }
-
-        vm.newPackage = {};
-        vm.newPackage.breakfast = false;
-        vm.newPackage.lunch = false;
-        vm.newPackage.singleModel = 1;
-        vm.newPackage.price = 0;
-        vm.newPackage.channels = {};
-
         return vm;
     }
 })();

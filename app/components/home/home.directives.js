@@ -8,4 +8,10 @@ angular.module('angularstrapApp')
         return {
             templateUrl: '/app/components/home/views/oldPackage.view.html'
         };
-});
+    })
+    .directive('priceComparison', function() {
+        return {
+            templateUrl: '/app/components/home/views/priceComparison.view.html'
+        };
+
+    });

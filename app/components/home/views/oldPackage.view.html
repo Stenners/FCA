@@ -1,16 +1,7 @@
 <div class="well">
-	<div ng-repeat="Package in ctrl.Packages" class="btn-group" role="group">
-
-		<!-- <button type="button" name="button" class="btn btn-default" ng-click="ctrl.doClick()">{{Package.name}}</button> -->
-
-		<label class="btn btn-primary">
-      {{Package.name}}
-    </label>
-
-	</div>
-
-	<div class="well">
-
-	</div>
-
+	<select ng-options="package.name for package in ctrl.Packages" ng-model="ctrl.oldPackage" class="form-control">
+         <option value="" disabled>Choose Package</option>
+    </select>
+	<br>
+ 	<pre><code>{{ ctrl.oldPackage | json }}</code></pre>
 </div>
