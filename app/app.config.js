@@ -6,7 +6,8 @@ angular
 
     .module('angularstrapApp', [
         'ui.router',
-        'angularstrapApp.homeServices'
+        'angularstrapApp.homeServices',
+        'ui.bootstrap'
     ])
 
     .constant('CONFIG',
