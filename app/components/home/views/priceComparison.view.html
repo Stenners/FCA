@@ -2,10 +2,12 @@
 	<div class="">
 		Old price: {{ctrl.oldPackage.price|currency}}
 	</div>
+	<br>
 	<div class="">
 		New price: {{ctrl.newPackage.price|currency}}
 	</div>
-	<div class="">
+	<br>
+	<div ng-class="ctrl.betterOrWorse(ctrl.oldPackage.price, ctrl.newPackage.price)">
 		Difference: {{ctrl.oldPackage.price - ctrl.newPackage.price|currency}}
 	</div>
 </div>

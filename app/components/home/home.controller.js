@@ -18,15 +18,19 @@
             vm.Packages = data;
         });
 
-        vm.subPackChange = function(checkId) {
-            var oldPrice = parseInt(vm.newPackage.price, 10),
+        vm.subPackChange = function(CurrentPackage, checkId) {
+            var oldPrice = parseInt(vm[CurrentPackage].price, 10),
                 newPrice = parseInt(checkId.price, 10);
             if (checkId.selected) {
-                vm.newPackage.price = oldPrice + newPrice;
+                vm[CurrentPackage].price = oldPrice + newPrice;
             } else {
-                vm.newPackage.price = oldPrice - newPrice;
+                vm[CurrentPackage].price = oldPrice - newPrice;
             }
         }
+		vm.betterOrWorse = function(a,b) {
+			return (a > b ? 'worse' : 'better');
+			// Some bugs here.
+		}
 
         return vm;
     }
