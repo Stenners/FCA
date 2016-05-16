@@ -1,4 +1,7 @@
 <div class="well">
-	<h1>Channels</h1>
-	
+	<div class="channels">
+		<div class="logo" ng-repeat="channel in ctrl.oldPackage.channels track by $index">
+			{{channel.name}}
+		</div>
+	</div>
 </div>
