@@ -3,7 +3,7 @@
 		<option value="" disabled>Choose Package</option>
 	</select>
 	<div class="subPacks" ng-repeat="subPack in ctrl.newPackage.subPacks track by $index">
-		<input type="checkbox" name="{{subPack.name}}" ng-model="ctrl.newPackage.subPacks[$index]" ng-change="ctrl.subPackChange()" />{{subPack.name}}
+		<input type="checkbox" name="{{subPack.name}}" ng-model="ctrl.newPackage.subPacks[$index].selected" ng-change="ctrl.subPackChange(ctrl.newPackage.subPacks[$index])" />{{subPack.name}}
 	</div>
 	<br>
 	<pre><code>{{ ctrl.newPackage | json }}</code></pre>

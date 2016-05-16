@@ -18,10 +18,14 @@
             vm.Packages = data;
         });
 
-        vm.subPackChange = function() {
-            // console.log(vm.newPackage.price);
-            // console.log(vm.Packages.price);
-            // vm.newPackage.price = vm.newPackage.price + vm.newPackage.something;
+        vm.subPackChange = function(checkId) {
+            var oldPrice = parseInt(vm.newPackage.price, 10),
+                newPrice = parseInt(checkId.price, 10);
+            if (checkId.selected) {
+                vm.newPackage.price = oldPrice + newPrice;
+            } else {
+                vm.newPackage.price = oldPrice - newPrice;
+            }
         }
 
         return vm;
