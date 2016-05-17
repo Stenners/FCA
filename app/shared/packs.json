@@ -1,0 +1,18 @@
+{
+    "Packages": [{
+        "name": "Platinum HD",
+        "price": "135",
+        "channels": {}
+    }, {
+        "name": "Entertainment Pack",
+        "price": "26",
+        "channels": {},
+        "subPacks": [{
+            "name": "Sport",
+            "price": "20"
+        }, {
+            "name": "Movies",
+			"price": "20"
+        }]
+    }]
+}
