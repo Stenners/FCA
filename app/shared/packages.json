@@ -1,18 +1,18 @@
 {
     "Packages": [{
-        "name": "Platinum HD",
-        "price": "135",
-        "channels": {}
-    }, {
-        "name": "Entertainment Pack",
-        "price": "26",
-        "channels": {},
-        "subPacks": [{
-            "name": "Sport",
-            "price": "20"
-        }, {
-            "name": "Movies",
-			"price": "20"
-        }]
-    }]
+            "name": "Platinum HD",
+            "price": "135",
+            "subPacks": [{
+                "name": "Sport",
+            }, {
+                "name": "Movies",
+            }, ]
+        },
+
+
+        {
+            "name": "Entertainment Package",
+            "price": "26"
+        }
+    ]
 }
