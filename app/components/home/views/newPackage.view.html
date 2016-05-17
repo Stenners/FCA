@@ -1,10 +1,10 @@
 <div class="well">
 	<select ng-options="package.name for package in ctrl.Packages" ng-model="ctrl.newPackage" class="form-control">
-        <option value="" disabled>Choose Package</option>
-    </select>
-	<div class="subPacks" ng-repeat="subPack in ctrl.newPackage.subPacks" >
-		<input type="checkbox" ng-true-value="subPack.price" ng-model="ctrl.newPackage.price" />{{subPack.name}}
+		<option value="" disabled>Choose Package</option>
+	</select>
+	<div class="subPacks" ng-repeat="subPack in ctrl.newPackage.subPacks track by $index">
+		<input type="checkbox" name="{{subPack.name}}" ng-model="ctrl.newPackage.subPacks[$index].selected" ng-change="ctrl.subPackChange('newPackage', ctrl.newPackage.subPacks[$index])" />{{subPack.name}}
 	</div>
 	<br>
- 	<pre><code>{{ ctrl.newPackage | json }}</code></pre>
+	<pre><code>{{ ctrl.newPackage | json }}</code></pre>
 </div>

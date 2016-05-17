@@ -8,7 +8,7 @@
 
     function homeController($scope, $http, $window, $q, asyncService) {
 
-        var vm = this;  // jshint ignore: line
+        var vm = this; // jshint ignore: line
 
         //services (old stuff)
         //vm.angularstrapService = asyncService;
@@ -17,6 +17,20 @@
         asyncService.getPackages().then(function(data) {
             vm.Packages = data;
         });
+
+        vm.subPackChange = function(CurrentPackage, checkId) {
+            var oldPrice = parseInt(vm[CurrentPackage].price, 10),
+                newPrice = parseInt(checkId.price, 10);
+            if (checkId.selected) {
+                vm[CurrentPackage].price = oldPrice + newPrice;
+            } else {
+                vm[CurrentPackage].price = oldPrice - newPrice;
+            }
+        }
+		vm.betterOrWorse = function(a,b) {
+			return (a > b ? 'worse' : 'better');
+			// Some bugs here.
+		}
 
         return vm;
     }

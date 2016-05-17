@@ -1,5 +1,6 @@
 {
     "Packages": [{
+<<<<<<< HEAD
             "name": "Platinum HD",
             "price": "135",
             "subPacks": [{
@@ -15,4 +16,37 @@
             "price": "26"
         }
     ]
+=======
+        "name": "Platinum HD",
+        "price": "135"
+
+    }, {
+        "name": "Entertainment Pack",
+        "price": "26",
+        "channels": {},
+        "packs": [{
+            "name": "Sport",
+            "price": "20",
+			"channels": [{
+	            "name": "Showcase",
+	            "logo": "logo"
+	        }, {
+	            "name": "FX",
+	            "logo": "logo"
+	        }, {
+	            "name": "FX",
+	            "logo": "logo"
+	        }, {
+	            "name": "FX",
+	            "logo": "logo"
+	        }, {
+	            "name": "FX",
+	            "logo": "logo"
+	        }]
+        }, {
+            "name": "Movies",
+            "price": "20"
+        }]
+    }]
+>>>>>>> 892e279e8ce953e6fb81039de5390d88644cbeaf
 }

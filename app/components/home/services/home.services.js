@@ -20,7 +20,6 @@
                 .success(function(data) {
                     factory.retrievedData = data.Packages;
                     deferred.resolve(factory.retrievedData);
-
                 });
             return deferred.promise;
         }
