@@ -1,9 +1,9 @@
 <div class="well">
-	<select ng-options="package.name for package in ctrl.Packages" ng-model="ctrl.newPackage" class="form-control">
+	<select ng-options="package as package.name for package in ctrl.Packages" ng-model="ctrl.newPackage" class="form-control">
 		<option value="" disabled>Choose Package</option>
 	</select>
-	<div class="subPacks" ng-repeat="subPack in ctrl.newPackage.subPacks track by $index">
-		<input type="checkbox" name="{{subPack.name}}" ng-model="ctrl.newPackage.subPacks[$index].selected" ng-change="ctrl.subPackChange('newPackage', ctrl.newPackage.subPacks[$index])" />{{subPack.name}}
+	<div class="subPacks" ng-repeat="pack in ctrl.newPackage.packs track by $index">
+		<input type="checkbox" name="{{pack.name}}" ng-model="ctrl.newPackage.packs[$index].selected" ng-change="ctrl.subPackChange('newPackage', ctrl.newPackage.packs[$index])" />{{pack.name}}
 	</div>
 	<br>
 	<pre><code>{{ ctrl.newPackage | json }}</code></pre>

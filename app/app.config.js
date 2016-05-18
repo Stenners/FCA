@@ -8,11 +8,11 @@ angular
         'ui.router',
         'angularstrapApp.homeServices',
         'ui.bootstrap'
-    ])
-
-    .constant('CONFIG',
-    {
-	    DebugMode: true,
-	    StepCounter: 0,
-	    APIHost: 'http://localhost:12017'
-	});
+    ]);
+	//
+    // .constant('CONFIG',
+    // {
+	//     DebugMode: true,
+	//     StepCounter: 0,
+	//     APIHost: 'http://localhost:12017'
+	// });

@@ -1,18 +1,23 @@
 {
-    "Packages": [{
-        "name": "Platinum HD",
-        "price": "135",
-        "channels": {}
-    }, {
-        "name": "Entertainment Pack",
-        "price": "26",
-        "channels": {},
-        "subPacks": [{
-            "name": "Sport",
-            "price": "20"
+    "Packs": [{
+        "name": "Entertainment",
+        "price": 25,
+        "channels": [{
+            "name": "FOX8",
+            "logo": "fox8.png"
         }, {
-            "name": "Movies",
-			"price": "20"
+            "name": "Showcase",
+            "logo": "fox8.png"
+        }]
+    }, {
+        "name": "Sport",
+        "price": 20,
+        "channels": [{
+            "name": "FOX Sport",
+            "logo": "fox8.png"
+        }, {
+            "name": "Something",
+            "logo": "fox8.png"
         }]
     }]
 }

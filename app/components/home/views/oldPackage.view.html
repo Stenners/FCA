@@ -1,5 +1,5 @@
 <div class="well">
-	<select ng-options="package.name for package in ctrl.Packages" ng-model="ctrl.oldPackage" class="form-control">
+	<select ng-options="package as package.name for package in ctrl.Packages" ng-model="ctrl.oldPackage" class="form-control">
 		<option value="" disabled>Choose Package</option>
 	</select>
 	<div class="subPacks" ng-repeat="subPack in ctrl.oldPackage.subPacks track by $index">

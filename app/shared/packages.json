@@ -1,52 +1,27 @@
 {
     "Packages": [{
-<<<<<<< HEAD
-            "name": "Platinum HD",
-            "price": "135",
-            "subPacks": [{
-                "name": "Sport",
-            }, {
-                "name": "Movies",
-            }, ]
-        },
-
-
-        {
-            "name": "Entertainment Package",
-            "price": "26"
-        }
-    ]
-=======
         "name": "Platinum HD",
-        "price": "135"
-
+        "price": "135",
+        "packs": [{
+            "name": "Entertainment",
+            "selected": true
+        }, {
+            "name": "Sport",
+            "selected": true
+        }, {
+            "name": "Movies",
+            "selected": true
+        }]
     }, {
         "name": "Entertainment Pack",
         "price": "26",
-        "channels": {},
         "packs": [{
-            "name": "Sport",
-            "price": "20",
-			"channels": [{
-	            "name": "Showcase",
-	            "logo": "logo"
-	        }, {
-	            "name": "FX",
-	            "logo": "logo"
-	        }, {
-	            "name": "FX",
-	            "logo": "logo"
-	        }, {
-	            "name": "FX",
-	            "logo": "logo"
-	        }, {
-	            "name": "FX",
-	            "logo": "logo"
-	        }]
+            "name": "Entertainment",
+            "selected": true
         }, {
-            "name": "Movies",
-            "price": "20"
+            "name": "Sport"
+        }, {
+            "name": "Movies"
         }]
     }]
->>>>>>> 892e279e8ce953e6fb81039de5390d88644cbeaf
 }
