@@ -47,36 +47,26 @@
 
         vm.betterOrWorse = function(a, b) {
             return (a > b ? 'worse' : 'better');
-            // Some bugs here.
+            // Some bugs here. :(
         };
 
 		vm.doChannelDiff = function() {
 			vm.diffArray = [];
 			vm.diff = ObjectDiff.diffOwnProperties(vm.oldChannels,vm.newChannels);
 
-			//vm.diffValueChanges = ObjectDiff.toJsonDiffView(vm.diff);
-			//vm.diffArray = vm.diff.value;
-
 			angular.forEach(vm.diff.value, function(el) {
-				console.log(el);
 				if (el.changed === "removed") {
 					vm.diffArray.push(el);
 				}
-
 			});
-			//console.log(vm.diffArray);
 		};
 
         $scope.$watch('ctrl.newPackage', function(newVal, oldVal) {
-            //console.log(newVal);
-            //	console.log(oldVal);
             vm.getChannels('newPackage');
 			vm.doChannelDiff();
-			// you can directly diff your objects js now or parse a Json to object and diff
-
         }, true);
+
         $scope.$watch('ctrl.oldPackage', function() {
-            //console.log('oldPackage updated');
             vm.getChannels('oldPackage');
 			vm.doChannelDiff();
         }, true);

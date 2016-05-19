@@ -10,10 +10,3 @@ angular
         'ui.bootstrap',
 		'ds.objectDiff'
     ]);
-	//
-    // .constant('CONFIG',
-    // {
-	//     DebugMode: true,
-	//     StepCounter: 0,
-	//     APIHost: 'http://localhost:12017'
-	// });
