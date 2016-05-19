@@ -1,7 +1,6 @@
 {
     "Packages": [{
         "name": "Platinum HD",
-        "price": "135",
         "packs": [{
             "name": "Entertainment",
             "selected": true
@@ -14,7 +13,6 @@
         }]
     }, {
         "name": "Entertainment Pack",
-        "price": "26",
         "packs": [{
             "name": "Entertainment",
             "selected": true

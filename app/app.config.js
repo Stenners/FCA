@@ -7,7 +7,8 @@ angular
     .module('angularstrapApp', [
         'ui.router',
         'angularstrapApp.homeServices',
-        'ui.bootstrap'
+        'ui.bootstrap',
+		'ds.objectDiff'
     ]);
 	//
     // .constant('CONFIG',

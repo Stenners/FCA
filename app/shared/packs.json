@@ -1,23 +1,36 @@
 {
     "Packs": [{
         "name": "Entertainment",
-        "price": 25,
+        "price": 26,
         "channels": [{
             "name": "FOX8",
             "logo": "fox8.png"
         }, {
-            "name": "Showcase",
-            "logo": "fox8.png"
+            "name": "Arena",
+            "logo": "arena.png"
+		}, {
+            "name": "MTV",
+            "logo": "mtv.png"
         }]
     }, {
         "name": "Sport",
+        "price": 25,
+        "channels": [{
+            "name": "FOX Sports 1",
+            "logo": "fox1.png"
+        }, {
+            "name": "ESPN",
+            "logo": "espn.png"
+        }]
+    }, {
+        "name": "Movies",
         "price": 20,
         "channels": [{
-            "name": "FOX Sport",
-            "logo": "fox8.png"
+            "name": "Foxtel Movies Action",
+            "logo": "fma.png"
         }, {
-            "name": "Something",
-            "logo": "fox8.png"
+            "name": "Foxtel Movies Masterpiece",
+            "logo": "fmm.png"
         }]
     }]
 }
